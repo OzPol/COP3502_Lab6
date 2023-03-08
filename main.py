@@ -8,7 +8,12 @@ def encode(original_password):
     return encoded_password
 
 def decode(encoded_password):
-    pass
+    #Added by Melissa Mankewich
+    decoded_password = ''
+    for digit in encoded_password:
+        new_digit = str((int(digit) - 3) % 10)
+        decoded_password += new_digit
+    return decoded_password
 
 def main():
     while True:
