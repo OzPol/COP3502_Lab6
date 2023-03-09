@@ -14,6 +14,7 @@ def decode(encoded_password):
         new_digit = str((int(digit) - 3) % 10)
         decoded_password += new_digit
     return decoded_password
+#Adding a comment to the file pulled from GitHub
 
 def main():
     while True:
